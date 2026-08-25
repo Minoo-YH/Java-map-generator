@@ -2,14 +2,13 @@ import java.util.Random;
 
 public class WildernessMap extends Map {
 
-    private Random random = new Random();
-
     public WildernessMap(int width, int height) {
         super(width, height);
     }
 
     @Override
     protected Tile createTile() {
+        Random random = new Random();
         int randomNumber = random.nextInt(3);
 
         switch (randomNumber) {
