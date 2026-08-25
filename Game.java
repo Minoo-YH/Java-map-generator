@@ -13,7 +13,7 @@ public class Game {
 
         System.out.println("RPG Map Generator");
 
-        Map map = createMap("city", 10, 5);
+        Map map = createMap("wilderness", 10, 5);
 
         map.display();
     }
